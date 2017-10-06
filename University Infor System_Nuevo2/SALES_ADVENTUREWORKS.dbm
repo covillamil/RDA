@@ -1744,7 +1744,7 @@
   </LUW:LUWTable>
   <LUW:LUWTable xmi:id="_nO5UIKkdEeetA6KA_HZR2Q" name="FACTINTERNETSALES" schema="_mpwmwKkdEeetA6KA_HZR2Q" index="_nP3kgKkdEeetA6KA_HZR2Q" regularDataTableSpace="_NST1UKkoEeetA6KA_HZR2Q">
     <extensions xsi:type="dimensional:Fact" xmi:id="_wNOgEKkoEeetA6KA_HZR2Q" userDefined="true"/>
-    <columns xsi:type="LUW:LUWColumn" xmi:id="_nO5UIqkdEeetA6KA_HZR2Q" name="CUSTOMERKEY" nullable="false" defaultValue="">
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_nO5UIqkdEeetA6KA_HZR2Q" name="CUSTOMERKEY" description="llave primaria de customer" nullable="false" defaultValue="">
       <containedType xsi:type="SQLDataTypes:IntegerDataType" xmi:id="_nO5UI6kdEeetA6KA_HZR2Q" name="INTEGER" primitiveType="INTEGER"/>
     </columns>
     <columns xsi:type="LUW:LUWColumn" xmi:id="_nO5UJKkdEeetA6KA_HZR2Q" name="DATEKEY" nullable="false" defaultValue="">
@@ -1931,7 +1931,7 @@
   </LUW:LUWIndex>
   <LUW:LUWTable xmi:id="_nPUx8qkdEeetA6KA_HZR2Q" name="DIMCUSTOMER" schema="_mpwmwKkdEeetA6KA_HZR2Q" index="_nPUx8KkdEeetA6KA_HZR2Q" referencingForeignKeys="_nO57U6kdEeetA6KA_HZR2Q _nO57fakdEeetA6KA_HZR2Q" regularDataTableSpace="_NST1UKkoEeetA6KA_HZR2Q">
     <extensions xsi:type="dimensional:Dimension" xmi:id="_nPUx86kdEeetA6KA_HZR2Q"/>
-    <columns xsi:type="LUW:LUWColumn" xmi:id="_nPUx-akdEeetA6KA_HZR2Q" name="CUSTOMERKEY" nullable="false" defaultValue="">
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_nPUx-akdEeetA6KA_HZR2Q" name="CUSTOMERKEY" description="llave primaria de customer" nullable="false" defaultValue="">
       <containedType xsi:type="SQLDataTypes:IntegerDataType" xmi:id="_nPUx-qkdEeetA6KA_HZR2Q" name="INTEGER" primitiveType="INTEGER"/>
     </columns>
     <columns xsi:type="LUW:LUWColumn" xmi:id="_nPUx-6kdEeetA6KA_HZR2Q" name="GEOGRAPHYKEY" defaultValue="">
