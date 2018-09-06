@@ -1,0 +1,24 @@
+{
+	"name": "triggmod2",
+	"properties": {
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "Module2",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "ScheduleTrigger",
+		"typeProperties": {
+			"recurrence": {
+				"frequency": "Minute",
+				"interval": 1,
+				"startTime": "2018-09-06T05:01:00.699Z",
+				"endTime": "2018-09-07T05:02:52.182Z",
+				"timeZone": "UTC"
+			}
+		}
+	}
+}

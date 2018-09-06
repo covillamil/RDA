@@ -1,0 +1,49 @@
+{
+	"name": "SourceDataset_tip",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "HttpServer1",
+			"type": "LinkedServiceReference"
+		},
+		"type": "HttpFile",
+		"structure": [
+			{
+				"name": "_id",
+				"type": "String"
+			},
+			{
+				"name": "date",
+				"type": "String"
+			},
+			{
+				"name": "dateint",
+				"type": "Int64"
+			},
+			{
+				"name": "airport",
+				"type": "String"
+			},
+			{
+				"name": "temp",
+				"type": "Int64"
+			}
+		],
+		"typeProperties": {
+			"format": {
+				"type": "JsonFormat",
+				"filePattern": "arrayOfObjects",
+				"jsonPathDefinition": {
+					"_id": "$.['_id']",
+					"date": "$.['date']",
+					"dateint": "$.['dateint']",
+					"airport": "$.['airport']",
+					"temp": "$.['temp']"
+				}
+			},
+			"relativeUrl": "",
+			"requestMethod": "Get",
+			"additionalHeaders": "x-apikey: 5a31643dcb25c1076c7cd9ab\nContent-Type: application/json\n"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

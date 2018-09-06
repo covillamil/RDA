@@ -1,0 +1,24 @@
+{
+	"name": "DestinationDataset_tip",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"type": "AzureBlob",
+		"typeProperties": {
+			"format": {
+				"type": "TextFormat",
+				"columnDelimiter": ",",
+				"rowDelimiter": "",
+				"nullValue": "\\N",
+				"treatEmptyAsNull": true,
+				"skipLineCount": 0,
+				"firstRowAsHeader": true
+			},
+			"fileName": "demoMOd4",
+			"folderPath": "output"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
